@@ -24,7 +24,7 @@ personajes = [
         'raza': 'istar'
     },
     {
-         'nombre': 'legolas',
+        'nombre': 'legolas',
         'clase': 'arquero',
         'raza': 'elfo sindar'
 
