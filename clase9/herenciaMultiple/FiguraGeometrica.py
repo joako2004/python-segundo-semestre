@@ -1,4 +1,6 @@
-class FiguraGeometrica:
+from abc import ABC, abstractmethod
+
+class FiguraGeometrica(ABC):
     def __init__(self, ancho, alto):
         
         if self.validar_valores(ancho):
@@ -37,13 +39,12 @@ class FiguraGeometrica:
         else:
             print('el valor es erroneo para el alto')
     
+    @abstractmethod
+    def calcular_area(self):
+        pass
+    
+    def __str__(self):
+        return f'{self._ancho} {self._alto}'
+    
     def validar_valores(self, valor):
         return True if 0 < valor < 10 else False
-
-
-
-
-
-
-
-
